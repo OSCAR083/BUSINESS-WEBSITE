@@ -1,0 +1,193 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('IMAGES/IMG-20250428-WA0005.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333; /* Default text color */
+}
+
+/* Header Styling */
+header {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00bfff;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url('IMAGES/IMG-20241022-WA0011.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 123, 255, 0.6);
+}
+
+#hero h1, #hero p, #hero button {
+  position: relative;
+}
+
+#hero button {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero button:hover {
+  background-color: #0056b3;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-gallery img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* FAQ Section */
+details {
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+details p {
+  margin-top: 5px;
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

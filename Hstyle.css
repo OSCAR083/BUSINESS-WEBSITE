@@ -1,0 +1,11 @@
+/* Hero Section */
+#hero {
+    background-image: url('IMAGES/business-success-1.webp');
+    background-size: cover;
+    background-position: center;
+    color: floralwhite;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
